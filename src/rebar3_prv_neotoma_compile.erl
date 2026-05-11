@@ -31,7 +31,7 @@ do(State) ->
     rebar_api:info("Running neotoma...", []),
     Apps = case rebar_state:current_app(State) of
                undefined ->
-                   rebar_state:project_apps(State);
+                   rebar_state:project_apps(State) ++ rebar_state:all_deps(State);
                AppInfo ->
                    [AppInfo]
            end,
