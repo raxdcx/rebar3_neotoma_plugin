@@ -1,1 +1,4 @@
-[{<<"neotoma">>,{pkg,<<"neotoma">>,<<"1.7.3">>},0}].
+[{<<"neotoma">>,
+  {git,"https://github.com/seancribbs/neotoma",
+       {ref,"9e57d8ebd4ebb02c3e2428b08f3a01e2ff834ce2"}},
+  0}].
